@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+h1{
+    letter-spacing: 0.3em;
+    color: black;
+    font: 16px roboto, Noto, sans-serif;
+}
+.listButton{
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+.cart{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+}
+.options{
+    display: none;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    color: black;
+    font: 16px roboto, Noto, sans-serif;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.outwear-image{
+    display: flex;
+    justify-content: center;
+    height: 240px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+.writings{
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.shop-now-div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.shop-now-element{
+    border: solid 2px ;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tshirts{
+    display: flex;
+    max-width: 1440px;
+}
+
+.men-tshirts{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    max-width: 540px;
+}
+.men-tshirts-image{
+    display: flex;
+    justify-content: center;
+    height: 240px;
+}
+.women-tshirts{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    max-width: 540px;
+}
+
+.women-tshirts-image{
+    display: flex;
+    justify-content: center;
+    height: 240px;
+}
+
+.made-by-polymer{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: rgb(117, 117, 117);
+    color: black;
+    font: 8px roboto, Noto, sans-serif;
+}
+.demo-only{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+.demo-only-button{
+    color: white;
+    background-color: black;
+    font-size: 13px;
+    padding: 10px;
+}
+.dress-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media  screen and (min-width : 767px) {
+    .options{
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        color: black;
+        font: 13px roboto, Noto, sans-serif;
+        padding: 33px;
+    }
+}
