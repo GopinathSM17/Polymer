@@ -15,8 +15,18 @@ h1 {
     color: black;
     font: 16px roboto, Noto, sans-serif;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .listButton {
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+
+.arrow-button{
     display: flex;
     width: 24px;
     height: 24px;
@@ -50,12 +60,15 @@ img {
 }
 
 .outwear-image {
-    display: none;
-    /* display: flex;
+    display: flex;
     justify-content: center;
     height: 240px;
     width: 100%;
-    max-width: 1440px; */
+    max-width: 1440px;
+}
+
+.outwear-image-MensOutwear{
+    display: none;
 }
 
 
@@ -187,7 +200,7 @@ img {
         padding: 33px;
     }
 
-    .outwear-image {
+    .outwear-image-MensOutwear{
         display: flex;
         justify-content: center;
         height: 240px;
