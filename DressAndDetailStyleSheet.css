@@ -1,0 +1,93 @@
+
+.dress-and-detail-main-container{
+    padding: 50px
+}
+.image-container{
+    padding-bottom: 30px;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    row-gap: 10px;
+    padding-left: 20px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.pricing{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.size-options-container{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-color: rgb(32, 32, 32);
+    border-bottom-color: rgb(32, 32, 32) ;
+}
+
+.quantity-options-container{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+select{
+    width: 80%;
+    border-color: white;
+}
+
+label{
+    width: 20%;
+    color: rgb(117, 117, 117);
+}
+
+.description-header{
+    padding-bottom: 20px;
+    color: black;
+    font: 13px roboto, Noto, sans-serif;
+}
+
+.description-content{
+    color: rgb(117, 117, 117);
+    font: 13px roboto, Noto, sans-serif;
+    padding-bottom: 20px;
+}
+
+.feature-header{
+    color: rgb(117, 117, 117);
+    font: 13px roboto, Noto, sans-serif;
+    padding-bottom: 10px;
+}
+
+.feature-lists{
+    color: rgb(117, 117, 117);
+    font: 13px roboto, Noto, sans-serif;
+    padding-bottom: 20px;
+    display: flex;
+    padding-left: 50px;
+}
+
+.feature-lists-unorder-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+@media screen and (min-width : 767px) {
+    .dress-and-detail-main-container{
+        flex-direction: row;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .image-container{
+        width: 50%;
+    }
+    .details-container{
+        width: 50%;
+    }
+}

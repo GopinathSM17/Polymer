@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Stylesheet" href="styles.css" />
+    <link rel="Stylesheet" href="DressAndDetailStyleSheet.css" />
     <title>DressAndDetails</title>
   </head>
   <body>
@@ -48,55 +49,61 @@
         </svg>
       </div>
     </div>
-    <div class="main-container">
+    <div class="main-container font-card dress-and-detail-main-container">
       <div class="image-container">
         <img src="Images/Mens_outwear_google.jpg" />
       </div>
-      <div class="discription">Men's Tech Shell Full-Zip</div>
-      <div class="pricing">$50.20</div>
+      <div class="details-container">
+        <div class="description">Men's Tech Shell Full-Zip</div>
+        <div class="pricing">$50.20</div>
 
-      <div class="size-options-container">
-        <label for="size">Size</label>
-        <select id="size" name="size">
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-        </select>
+        <div class="size-options-container">
+          <label for="size" class="size-label">Size</label>
+          <select id="size" name="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+        </div>
+
+        <div class="quantity-options-container">
+          <label for="quantity " class="quantity-label">Quantity</label>
+          <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <div class="description-header"><h4>Description</h4></div>
+
+        <div class="description-content">
+          A versatile full-zip that you can wear all day long and even to the
+          gym. This technical shell features moisture-wicking fabric, added
+          stretch and a hidden pocket for your smartphone or media player.
+        </div>
+
+        <div class="feature-header"><h5>Features</h5></div>
+
+        <div class="feature-lists">
+          <ul class="feature-lists-unorder-list">
+            <li>100% polyester.</li>
+            <li>Smooth, technical front with textured mesh back.</li>
+            <li>Drawstring bottom for adjustable fit.</li>
+            <li>Raglan sleeves.</li>
+            <li>
+              Available in forest green with the white Google logo embroidered
+              at left chest.
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="quantity-options-container">
-        <label for="quantity">Quantity</label>
-        <select id="quantity" name="quantity">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div>
-
-      <div class="description-header"><h4>Description</h4></div>
-
-      <div class="description-content">
-        A versatile full-zip that you can wear all day long and even to the gym.
-        This technical shell features moisture-wicking fabric, added stretch and
-        a hidden pocket for your smartphone or media player.
-      </div>
-
-      <div class="feature-header"><h5>Features</h5></div>
-
-      <div class="feature-lists">
-        <ul>
-          <li>100% polyester.</li>
-          <li>Smooth, technical front with textured mesh back.</li>
-          <li>Drawstring bottom for adjustable fit.</li>
-          <li>Raglan sleeves.</li>
-          <li>Available in forest green with the white Google logo embroidered at left chest.</li>
-        </ul>
-      </div>
-
     </div>
     <div class="made-by-polymer font-card"><p>Made by Polymer</p></div>
-    <div class="demo-only font-card"><p class="demo-only-button">DEMO ONLY</p></div>
+    <div class="demo-only font-card">
+      <p class="demo-only-button">DEMO ONLY</p>
+    </div>
   </body>
 </html>
