@@ -1,0 +1,275 @@
+body {
+    font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+
+.checkout-header {
+    font: 14.3px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.demo-header {
+    font-size: 1.1em;
+    font: 12px;
+    color: rgb(117, 117, 117);
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+h4 {
+    font-weight: normal;
+    font-weight: bold;
+}
+
+.form-container {
+    padding: 24px;
+    padding-top: 20px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-information {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.email-field {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.phone-number-field {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.shipping-address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 20px;
+}
+
+.address-field {
+    border-bottom: 1px solid #ccc;
+}
+
+.city-field {
+    border-bottom: 1px solid #ccc;
+}
+
+.state-and-zip-code-row {
+    display: flex;
+    column-gap: 40px;
+}
+
+.state-field {
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+}
+
+.zip-code-field {
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+}
+
+.country-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 10px;
+}
+
+.country-select {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #757575;
+}
+
+
+
+/* this code is to hide the billing address with respective of the checkbox*/
+
+
+/* .billing-address{
+    display: none;
+} */
+
+/* .check:checked ~ .billing-address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 20px;
+}
+ */
+
+/* This below code is for the select tag style,
+specific for this page only */
+select {
+    width: 100%;
+    border-color: white;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+select:focus {
+    border-bottom: 2px solid black;
+
+}
+
+
+
+/* This below code is for the field input styles,
+    specific for this page alone */
+input {
+    border: none;
+    outline: none;
+    display: flex;
+    width: 100%;
+    height: 76px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    color: #757575;
+}
+
+input:focus::placeholder {
+    font-size: 15px;
+    transform: translateY(-20px);
+    /* Move it up */
+    color: black;
+}
+
+.input-container input:focus {
+    border-bottom: 2px solid black;
+}
+
+
+/* Checkbox styling */
+label {
+    display: flex;
+    width: 100%;
+}
+
+.checkbox-1 {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.checkbox-content {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+}
+
+
+/* This is for the container-2*/
+
+
+.container-2 {
+    padding-top: 20px;
+}
+
+/* this is for the Payment Method  */
+.cardholder-name-field {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-number-field {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.expiry {
+    display: flex;
+    padding: 20px;
+    column-gap: 20px;
+}
+
+.month {
+    width: 34%;
+}
+
+.month-select {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.year {
+    width: 30%;
+}
+
+.year-select {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.cvv {
+    width: 34%;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Order Summmary fields */
+
+.order-summary {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 40px;
+
+}
+
+.order-summary-header {
+    padding-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+}
+
+.total {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+@media screen and (min-width : 767px) {
+    .form {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        justify-content: center;
+    }
+}

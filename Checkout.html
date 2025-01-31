@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="reset.css" />
+    <link rel="Stylesheet" href="styles.css" />
+    <link rel="Stylesheet" href="CheckoutStyleSheet.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="arrow-button">
+        <svg
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          style="
+            pointer-events: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+          "
+        >
+          <g>
+            <path
+              d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <h1><a href="HomePage.html">SHOP</a></h1>
+      <div class="cart">
+        <svg
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          style="
+            pointer-events: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+          "
+        >
+          <g>
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="checkout-header"><h2>Checkout</h2></div>
+    <div class="demo-header">
+      <h3>Shop is a demo app - form data will not be sent</h3>
+    </div>
+    <div class="form-container main-container">
+      <form class="form" action="OrderConfirmed.php" method="post">
+        <div class="container-1">
+          <div class="account-information">
+            <h4>Account Information</h4>
+            <div class="email-field input-container">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="phone-number-field input-container">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+          </div>
+          <div class="shipping-address">
+            <h4>Shipping Address</h4>
+            <div class="address-field input-container">
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Adress"
+                required
+              />
+            </div>
+            <div class="city-field input-container">
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="City"
+                required
+              />
+            </div>
+            <div class="state-and-zip-code-row">
+              <div class="state-field input-container">
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="State/Province"
+                  required
+                />
+              </div>
+              <div class="zip-code-field input-container">
+                <input
+                  type="tel"
+                  id="zip-code"
+                  name="zip-code"
+                  placeholder="Zip/Postal Code"
+                  required
+                />
+              </div>
+            </div>
+            <div class="country-field">
+              <label for="country" class="country">Country</label>
+              <select class="country-select" id="country" name="country">
+                <option value="UnitedStates">United States</option>
+                <option value="Canada">Canada</option>
+              </select>
+            </div>
+          </div>
+          <div class="checkbox">
+            <label>
+              <div class="checkbox-1">
+                <input class="check" type="checkbox" />
+              </div>
+              <div class="checkbox-content">Use different billing address</div>
+            </label>
+          </div>
+          <div class="billing-address">
+            <h4>Billing Address</h4>
+
+            <div class="address-field input-container">
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Adress"
+                required
+              />
+            </div>
+            <div class="city-field input-container">
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="City"
+                required
+              />
+            </div>
+            <div class="state-and-zip-code-row">
+              <div class="state-field input-container">
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="State/Province"
+                  required
+                />
+              </div>
+              <div class="zip-code-field input-container">
+                <input
+                  type="tel"
+                  id="zip-code"
+                  name="zip-code"
+                  placeholder="Zip/Postal Code"
+                  required
+                />
+              </div>
+            </div>
+            <div class="country-field">
+              <label for="country" class="country">Country</label>
+              <select class="country-select" id="country" name="country">
+                <option value="UnitedStates">United States</option>
+                <option value="Canada">Canada</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="container-2">
+          <h4>Payment Method</h4>
+          <div class="cardholder-name-field input-container">
+            <input
+              type="text"
+              id="cardHolder"
+              name="cardHolder"
+              placeholder="Cardholder Name"
+              required
+            />
+          </div>
+          <div class="card-number-field input-container">
+            <input
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              placeholder="Card Number"
+              required
+            />
+          </div>
+          <div class="expiry">
+            <div class="month">
+              <select class="month-select" id="month" name="month">
+                <option value="Jan">Januvary</option>
+                <option value="Feb">Februvary</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="Jun">June</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">August</option>
+                <option value="Sep">September</option>
+                <option value="Oct">Octber</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+              </select>
+            </div>
+            <div class="year">
+              <select class="year-select" id="year" name="year">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+              </select>
+            </div>
+            <div class="cvv">
+              <input
+                type="tel"
+                id="cvv"
+                name="cvv"
+                placeholder="CVV"
+                required
+              />
+            </div>
+          </div>
+          <div class="order-summary">
+            <h4 class="order-summary-header">Order Summary</h4>
+            <div class="product">
+              <div class="product-name">Anvil L/S Crew Neck - Grey</div>
+              <div class="product-price">$22.15</div>
+            </div>
+            <div class="product">
+              <div class="product-name">Inbox - Subtle Actions T-Shirt</div>
+              <div class="product-price">$17.05</div>
+            </div>
+            <div class="product">
+              <div class="product-name">Men's Tech Shell Full-Zip</div>
+              <div class="product-price">$50.20</div>
+            </div>
+            <div class="product">
+              <div class="product-name">Green Flex Fleece Zip Hoodie</div>
+              <div class="product-price">$91.30</div>
+            </div>
+          </div>
+          <div class="total">
+            <div class="product-name">Total</div>
+            <div class="product-price">$180.70</div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="made-by-polymer font-card"><p>Made by Polymer</p></div>
+    <div class="demo-only font-card"><p class="demo-only-button">DEMO ONLY</p></div>
+  </body>
+</html>
